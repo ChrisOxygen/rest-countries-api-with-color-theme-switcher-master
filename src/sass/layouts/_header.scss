@@ -1,0 +1,24 @@
+header {
+    grid-row: 1 / 2;
+    grid-column: l-space-start / r-space-end;
+    background-color: $color-White--Dark-Mode-Text-and-Light-Mode-Elements;
+    //border-bottom: 1px solid rgb(216, 216, 216);
+    box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.089);
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 125rem) 1fr;
+    column-gap: 1rem;
+    @include trans;
+}
+
+.header-content {
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-dark-mode-style {
+    background-color: $color-Dark-Blue--Dark-Mode-Elements;
+}

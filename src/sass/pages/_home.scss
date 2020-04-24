@@ -1,0 +1,19 @@
+.home {
+    grid-row: 2 / 3;
+    grid-column: l-space-start / r-space-end;
+    background-color: rgba(243, 243, 243, 0.973);
+    z-index: 1;
+    max-height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 125rem) 1fr;
+    grid-template-rows: max-content 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    @include trans;
+    //display: none;
+}
+
+.home-dark-mode-style {
+    background-color: $color-Very-Dark-Blue--Dark-Mode-Background;
+}

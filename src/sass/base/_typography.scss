@@ -1,0 +1,22 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.dark-mode {
+    display: block;
+    font-weight: 600;
+    font-size: $font-size-Homepage-Items;
+    position: relative;
+    line-height: 1.8rem;
+}
+
+.country__detail {
+    & p {
+        font-size: 1.4rem;
+        margin-bottom: .9rem;
+
+        // &:not(:last-child) {
+        //     margin-bottom: .9rem;
+        // }
+    }
+}

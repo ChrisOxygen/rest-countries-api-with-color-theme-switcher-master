@@ -1,0 +1,117 @@
+.country-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media only screen and(max-width:$bp-1149) {
+        flex-direction: column;
+        margin-bottom: 4rem;
+
+
+    }
+
+    @media only screen and(max-width:$bp-539) {
+        align-items: flex-start;
+
+    }
+
+    &__flag {
+        display: block;
+        width: 50rem;
+
+        @media only screen and(max-width:$bp-539) {
+            width: 98%;
+
+        }
+
+        &--img {
+            width: 100%;
+            border: 1px solid #EAEAEA;
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-left: 2rem;
+        max-width: 60rem;
+        flex-wrap: wrap;
+
+        @media only screen and(max-width:$bp-1149) {
+            max-width: 50rem;
+            margin: 2rem 0;
+            margin-top: 4rem;
+
+        }
+
+
+
+
+
+        &--name {
+            font-size: 4.1rem;
+            margin-bottom: 2rem;
+        }
+
+        &--list {
+            list-style: none;
+            padding: 3rem 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            @media only screen and(max-width:$bp-539) {
+                flex-direction: column;
+
+            }
+
+        }
+
+        &--item {
+            flex: 0 0 50%;
+            margin-bottom: .7rem;
+            font-size: 1.4rem;
+
+            @media only screen and(max-width:$bp-539) {
+                //flex: 0 0 50%;
+                display: block;
+
+
+            }
+
+            &:nth-of-type(5) {
+                @media only screen and(max-width:$bp-539) {
+                    margin-bottom: 4rem;
+
+                }
+            }
+        }
+
+        &--border-countries {
+            font-size: 1.4rem;
+
+            & strong {
+                margin-right: 1rem;
+
+                @media only screen and(max-width:$bp-539) {
+                    //flex: 0 0 50%;
+                    display: block;
+                    margin-bottom: 1rem;
+
+                }
+            }
+
+            & a {
+                margin-right: 1rem;
+
+                @media only screen and(max-width:$bp-539) {
+                    margin-bottom: 1rem;
+
+                }
+            }
+        }
+    }
+}

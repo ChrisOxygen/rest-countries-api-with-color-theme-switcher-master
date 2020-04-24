@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: inherit;
+    //transition: all .1s ease-in-out;
+}
+
+html {
+    /*its was 10px so we did 10/16 * 100 to get the percentage(16 is the default font size for browsers*/
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: [l-space-start]1fr[l-space-end main-start] minmax(min-content, 125rem)[main-end r-space-start] 1fr[r-space-end];
+    grid-template-rows: 6rem 1fr;
+    color: black;
+    background-color: white;
+    @include trans
+}
+
+// ::selection {
+//     background-color: $color-primary;
+//     color: $color-white;
+// }
+
+.body-dark-mode-style {
+    color: white;
+    background-color: $color-Very-Dark-Blue--Dark-Mode-Background;
+}

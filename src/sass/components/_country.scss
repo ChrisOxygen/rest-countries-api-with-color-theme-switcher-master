@@ -1,0 +1,50 @@
+.country {
+    @include trans;
+    display: flex;
+    flex-direction: column;
+    min-width: 27rem;
+    border-radius: 6px;
+    box-shadow: $b-shadow;
+    background-color: white;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+
+    &__flag {
+        display: block;
+        width: 100%;
+        //background-color: rgb(235, 235, 235);
+
+
+        &--img {
+            width: 100%;
+            border-bottom: 1px solid #EAEAEA;
+
+        }
+    }
+
+    &__detail {
+        display: block;
+        width: 100%;
+        padding: 2rem;
+        height: max-content;
+        padding-bottom: 3rem;
+
+        &--name {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.country-dark-mode-style {
+    background-color: $color-Dark-Blue--Dark-Mode-Elements;
+
+    .country__flag--img {
+        border: none;
+    }
+}
